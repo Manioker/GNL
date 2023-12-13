@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: andi <andi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: avacca <avacca@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 13:31:44 by avacca            #+#    #+#             */
-/*   Updated: 2023/11/30 18:26:29 by andi             ###   ########.fr       */
+/*   Updated: 2023/12/12 13:58:20 by avacca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ char				*copyleft(char *buf);
 int					whatever(t_list **list, t_list **firstnode, char *leftover,
 						int fd);
 char				*leftoverchecker(char **leftover, int fd);
+void				freelist(t_list **list);
 
 #endif

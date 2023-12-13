@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: andi <andi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: avacca <avacca@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 14:14:31 by andi              #+#    #+#             */
-/*   Updated: 2023/12/03 18:58:30 by andi             ###   ########.fr       */
+/*   Updated: 2023/12/12 13:57:10 by avacca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,7 @@ int	whatever(t_list **list, t_list **firstnode, char *leftover, int fd)
 		(*list)->next = ft_lstnew(leftoverchecker(&leftover, fd));
 		if ((*list)->next == NULL)
 		{
-			free(*firstnode);
+			freelist(firstnode);
 			return (0);
 		}
 		*list = (*list)->next;
